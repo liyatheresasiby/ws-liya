@@ -44,7 +44,9 @@ module.exports = (_, argv) => ({
       name: "wsliya",
       filename: "remoteEntry.js",
       remotes: {},
-      exposes: {},
+      exposes: {
+        "./App": "./src/App.jsx",
+      },
       shared: {
         ...deps,
         react: {
